@@ -81,19 +81,19 @@
     </extInfo>
   </items>
   <items xsi:type="form:FormField">
-    <name>СуммаДокумента</name>
-    <id>7</id>
+    <name>Клиент</name>
+    <id>13</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Объект.СуммаДокумента</segments>
+      <segments>Объект.Клиент</segments>
     </dataPath>
     <extendedTooltip>
-      <name>СуммаДокументаРасширеннаяПодсказка</name>
-      <id>9</id>
+      <name>КлиентРасширеннаяПодсказка</name>
+      <id>15</id>
       <type>Label</type>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -102,12 +102,12 @@
       </extInfo>
     </extendedTooltip>
     <contextMenu>
-      <name>СуммаДокументаКонтекстноеМеню</name>
-      <id>8</id>
+      <name>КлиентКонтекстноеМеню</name>
+      <id>14</id>
       <autoFill>true</autoFill>
     </contextMenu>
     <type>InputField</type>
-    <editMode>EnterOnInput</editMode>
+    <editMode>Enter</editMode>
     <showInHeader>true</showInHeader>
     <headerHorizontalAlign>Left</headerHorizontalAlign>
     <showInFooter>true</showInFooter>
@@ -148,6 +148,168 @@
     <contextMenu>
       <name>НоменклатураКонтекстноеМеню</name>
       <id>11</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>EnterOnInput</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаЦенаСкидка</name>
+    <id>25</id>
+    <items xsi:type="form:FormField">
+      <name>Цена</name>
+      <id>16</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Цена</segments>
+      </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>ЦенаПриИзменении</name>
+      </handlers>
+      <extendedTooltip>
+        <name>ЦенаРасширеннаяПодсказка</name>
+        <id>18</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ЦенаКонтекстноеМеню</name>
+        <id>17</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Скидка</name>
+      <id>19</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.БаллыКСписанию</segments>
+      </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>СкидкаПриИзменении</name>
+      </handlers>
+      <extendedTooltip>
+        <name>СкидкаРасширеннаяПодсказка</name>
+        <id>21</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СкидкаКонтекстноеМеню</name>
+        <id>20</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>ГруппаЦенаСкидкаРасширеннаяПодсказка</name>
+      <id>26</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>HorizontalIfPossible</group>
+      <behavior>Auto</behavior>
+      <representation>WeakSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>СуммаДокумента</name>
+    <id>7</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.СуммаДокумента</segments>
+    </dataPath>
+    <handlers>
+      <event>OnChange</event>
+      <name>СуммаДокументаПриИзменении</name>
+    </handlers>
+    <extendedTooltip>
+      <name>СуммаДокументаРасширеннаяПодсказка</name>
+      <id>9</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>СуммаДокументаКонтекстноеМеню</name>
+      <id>8</id>
       <autoFill>true</autoFill>
     </contextMenu>
     <type>InputField</type>
