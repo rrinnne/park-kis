@@ -7,14 +7,14 @@
     <listType typeId="2e687199-bf05-446e-9efb-ee98e4779f19" valueTypeId="74d4fb30-e058-456b-8974-b6efa0953ea5"/>
     <managerType typeId="6ddf1124-f007-4f28-b70e-2a5f261733fb" valueTypeId="fa1620be-40fb-4e11-9891-28b5e0863c60"/>
   </producedTypes>
-  <name>ВидыАттракционов</name>
+  <name>ВидАттракциона</name>
   <synonym>
     <key>ru</key>
-    <value>Виды аттракционов</value>
+    <value>Вид аттракциона</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <inputByString>Catalog.ВидыАттракционов.StandardAttribute.Code</inputByString>
-  <inputByString>Catalog.ВидыАттракционов.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидАттракциона.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ВидАттракциона.StandardAttribute.Description</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>

@@ -53,7 +53,7 @@
       <value>Вид аттракцион</value>
     </synonym>
     <type>
-      <types>CatalogRef.ВидыАттракционов</types>
+      <types>CatalogRef.ВидАттракциона</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
