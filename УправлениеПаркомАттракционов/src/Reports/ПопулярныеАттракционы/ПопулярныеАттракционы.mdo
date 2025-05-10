@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a20e162b-7f75-49aa-b103-3da0bd816569">
+  <producedTypes>
+    <objectType typeId="78433717-e343-43d7-a0dc-332cab9c0e7f" valueTypeId="e26a91ca-f3cc-40c1-be1f-4bef9c3f274e"/>
+    <managerType typeId="fd390db7-05b0-4c19-9600-b8ddad40db60" valueTypeId="6666aaca-987e-4ce4-98be-a6938ae0507c"/>
+  </producedTypes>
+  <name>ПопулярныеАттракционы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Популярные аттракционы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПопулярныеАттракционы.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="9f46494f-c0d4-4b69-a344-b647e727465d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>
